@@ -4,9 +4,13 @@
 }
 
 @mixin displayFlexCenter{
-    display: flex;
+    @include displayFlex;
     justify-content: center;
-    align-items: center;
+}
+
+@mixin displayFlexCenterColumn {
+    @include displayFlexCenter;
+    flex-direction: column;
 }
 
 @mixin displayFlexStart {
