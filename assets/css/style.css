@@ -129,6 +129,26 @@ table {
   border-spacing: 0;
 }
 
+.callToAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 186px;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #FFF;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -151,4 +171,75 @@ table {
   left: 17px;
   top: 14px;
   font-size: 20px;
+  color: #353535;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #EAEAEA;
+}
+.localisation h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+
+.reservation {
+  height: 287px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  flex-direction: column;
+  padding: 0px 26px;
+  text-align: center;
+}
+.reservation .title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.reservation .tagline {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 27px;
+}
+
+.footer {
+  background-color: #353535;
+  color: #FFF;
+  padding: 22px 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .logoWhite {
+  filter: invert(1);
+  height: 27px;
+}
+.footer .listLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer .listLink .listLink-element a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-direction: row;
+  gap: 11px;
+  color: #FFF;
+  text-decoration: none;
+}
+.footer .listLink .listLink-element a .fa-handshake-angle {
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

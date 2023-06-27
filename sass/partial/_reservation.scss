@@ -1,0 +1,18 @@
+.reservation{
+    height: 287px;
+    @include displayFlexCenter;
+    background-color: $background-gray;
+    flex-direction: column;
+    padding: 0px 26px;
+    text-align: center;
+    .title{
+        font-size: 24px;
+        font-weight: 700;
+        padding-bottom: 15px;
+    }
+    .tagline{
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 27px;
+    }
+}

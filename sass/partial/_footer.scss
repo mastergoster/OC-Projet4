@@ -1,0 +1,29 @@
+.footer{
+    background-color: $gray;
+    color: $white;
+    padding: 22px 25px;
+    @include displayFlexStart;
+    gap: 16px;
+    .logoWhite{
+        filter: invert(1);
+        height: 27px;
+    }
+    .listLink{
+        @include displayFlexStart;
+        gap: 7px;
+        .listLink-element {
+
+            a {
+                @include displayFlexStart;
+                flex-direction: row;
+                gap: 11px;
+                color: $white;
+                text-decoration: none;
+                .fa-handshake-angle{
+                    font-size: 12px;
+                }
+            }
+        
+        }
+    }
+}

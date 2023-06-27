@@ -1,0 +1,10 @@
+.callToAction{
+    @include displayFlexCenter;
+    height: 50px;
+    width: 186px;
+    background: $linear-gradient;
+    border: none;
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+    color: $white;
+}
