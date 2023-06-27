@@ -1,0 +1,19 @@
+.header{
+    @include displayFlexCenter;
+    height: 63px;
+    position: relative;
+    box-shadow: $box-shadow;
+    .logo{
+        width: 162px;
+        height: auto;
+    }
+    .arrow{
+        position: absolute;
+        @include displayFlexCenter;
+        width: 30px;
+        height: 30px;
+        left: 17px;
+        top: 14px;
+        font-size: 20px;
+    }
+}
