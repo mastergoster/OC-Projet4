@@ -10,7 +10,8 @@ body {
   font-size: 16px;
 }
 
-@import 'partial/header';
-@import 'partial/localisation';
-@import 'partial/reservation';
-@import 'partial/footer';
+@import 'partial/common/header';
+@import 'partial/index/localisation';
+@import 'partial/index/reservation';
+@import 'partial/index/working';
+@import 'partial/common/footer';
