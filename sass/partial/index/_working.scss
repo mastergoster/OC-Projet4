@@ -1,21 +1,29 @@
 .working{
     box-sizing: border-box;
+    @include displayFlexCenterColumn;
     height: 440px;
     padding: 48px 20px 0 20px;
+
     .title{
         font-size: 24px;
         font-weight: 700;
         padding-bottom: 26px;
+        align-self: flex-start;
     }
     &-list{
         @include displayFlexCenter;
         flex-direction: column;
+        align-self: center;
         gap: 24.92px;
+        width: 100%;
+        max-width: 375px;
         &_element{
             @include displayFlex;
             box-sizing: border-box;
             position: relative;
+            margin-left: 12px;
             width: 100%;
+            max-width: 375px;
             height: 72.379px;
             border-radius: 20px;
             padding-left: 30.49px;
@@ -26,6 +34,7 @@
                 @include displayFlexCenter;
                 height: 18px;
                 width: 18px;
+                color: $middle-gray;
             }
             .marker{
                 @include displayFlexCenter;

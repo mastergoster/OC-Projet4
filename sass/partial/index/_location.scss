@@ -2,6 +2,7 @@
     @include displayFlexCenter;
     height: 50px;
     background-color: $light-gray;
+    color: $gray;
     h2{
         @include displayFlexCenter;
         gap: 17px;

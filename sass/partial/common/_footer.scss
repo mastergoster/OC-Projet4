@@ -3,10 +3,13 @@
     color: $white;
     padding: 22px 25px;
     @include displayFlexStart;
+    @media only screen and (min-width: 501px) {
+            /* Appareils avec une résolution au-dessus de 500px */
+    }
     gap: 16px;
     .logoWhite{
         filter: invert(1);
-        height: 27px;
+        height: 18px;
     }
     .listLink{
         @include displayFlexStart;
