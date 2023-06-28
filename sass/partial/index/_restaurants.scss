@@ -4,6 +4,7 @@
     background-color: $background-gray;
     padding: 54px 20px 0 20px;
     .title{
+        align-self: flex-start;
         font-size: 24px;
         font-weight: 700;
     }
@@ -37,7 +38,7 @@
                 height: 174px;
                 width: calc(100% + 6px);
                 object-fit: cover;
-                object-position: -3px -57px;
+                object-position: -3px calc(50% - 25px);
             }
             .title{
                 font-size: 18px;
@@ -54,6 +55,7 @@
                 bottom: 33px;
                 right: 25px;
                 font-size: 20px;
+                z-index: 10;
                 &:hover{
                     background: $linear-gradient-reverse;
                     font-weight: 900;
@@ -61,6 +63,15 @@
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
+            }
+            .link{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 5;
+                color: transparent;
             }
         }
     }

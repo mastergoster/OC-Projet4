@@ -270,6 +270,7 @@ body {
   padding: 54px 20px 0 20px;
 }
 .restaurants .title {
+  align-self: flex-start;
   font-size: 24px;
   font-weight: 700;
 }
@@ -311,8 +312,8 @@ body {
   width: calc(100% + 6px);
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: -3px -57px;
-     object-position: -3px -57px;
+  -o-object-position: -3px calc(50% - 25px);
+     object-position: -3px calc(50% - 25px);
 }
 .restaurants-list .card .title {
   font-size: 18px;
@@ -329,6 +330,7 @@ body {
   bottom: 33px;
   right: 25px;
   font-size: 20px;
+  z-index: 10;
 }
 .restaurants-list .card .fa-heart:hover {
   background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
@@ -336,6 +338,15 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.restaurants-list .card .link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  color: transparent;
 }
 
 .footer {
